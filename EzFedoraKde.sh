@@ -1,9 +1,9 @@
 #update + gui
-echo"updating + gui"
+echo "updating + gui"
 dnf -y update
 dnf group install -y "KDE Plasma Workspaces"
 #adding apps
-echo"adding apps"
+echo "adding apps"
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 dnf install dnf-plugins-core
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
@@ -18,6 +18,6 @@ flatpak -y install flathub com.usebottles.bottles
 
 
 #finish up
-echo"reboot"
+echo "reboot"
 reboot
 
